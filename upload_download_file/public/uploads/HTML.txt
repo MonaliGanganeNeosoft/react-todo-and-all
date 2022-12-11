@@ -1,0 +1,362 @@
+-> Html :- It is used to create web page.
+  -> latest version of html is html5 
+  -> It is not a case sensitive language
+  -> extension .html 
+  -> tags :- < > 
+  -> Every tag must be close in html 
+    Basic structure 
+  <!doctype html>
+    <html>
+      <head>
+         //to define title , meta tags , styles , scripts
+      </head>
+      <body>
+        // we can create whole web page 
+      </body>
+    </html>
+    -> Head Section 
+     -> title tag :- it is display in the title bar.but mainally used for SEO(Search Engine Optamization)
+       <title> My first we page </title>
+     -> meta tags :- used for SEO 
+     -> styles :- css 
+     -> scripts :- javascript 
+    -> Body Section :- we can develop whole web page in the section 
+    <body>
+    </body>
+      -> heading tag 
+        h1 to h6 
+        h1 :- largest 
+        h6 : smallest 
+        -> Paragraph Tag :- 
+        <p> </p>
+        -> List tag 
+          -> Ordered List (OL) (Numbered)
+             1 2 3 (bydefault)
+             abc 
+             abc
+             i ii iii 
+             I II III
+          -> Unordered List (UL) (Bulleted)
+            disc (bydefault)
+            square 
+            circle 
+            -> To add any item in a list <li> </li>
+         eg:
+         1. Angular 
+         2. React Js 
+         3. Vue Js 
+         <ol>
+           <li> Angular </li>
+           <li> React Js </li>
+           <li> Vue Js </li>
+         </ol>
+
+         -->
+        Course Details 
+          i. Courses 
+             . Angular 
+             . React 
+             . Vue Js 
+         ii. Duration 
+             . 2 Months 
+             . 3 Months 
+             . 1 Months
+      -> Hyperlink :- It is a process in which we can navigate one page into another or within same page.
+        anchor tag : <a> tag 
+          -> attributes 
+            href="path" 
+              hypertext reference 
+            target="value" 
+              bydefault :- self (same page)
+                       _blank (new blank tab)
+            -> external link
+            <a href="http://www.abc.com"> Abc </a> 
+            -> internal link 
+            <a href="first.html"> First Page </a>
+        -> Insert image 
+          <img src="path" alt="description"/>
+
+     Task 
+
+     Angular   React    Vue  Gallery Bottom 
+     <p>
+        ANgular 
+    </p>
+    <p>
+        React 
+    </p>
+    <p>
+        Vue 
+    </p>
+    <p>
+        Gallery 
+    </p>
+    Bottom
+    ---> Table :- combination of row and column 
+        <table> 
+          -> width 
+          -> height 
+          -> border 
+          -> cellpadding :- the space between the text and the edje of the cell
+          -> cellspacing :- space between the cells 
+         -> row 
+           <tr> --- </tr> 
+         -> column 
+          <td> </td>
+          <th></th>
+             -> attributes 
+               colspan=value (horizontal)
+               rowspan=value (vertical)
+
+            Name  Age  City 
+            A     23   Noida
+            B     33   Delhi 
+
+
+             Details 
+        E    Name   Age 
+        M    ANuj   33
+        P    AMit   44 
+
+-> Forms :- are the collection of fields like textbox, radio buttons , checkbox etc.
+<form> tag :- 
+  -> attributes 
+     -> name|id="value"
+     -> method="get|post" (by default get)
+     -> action="url" 
+     -> enctype="multipart/form-data"
+       -> get :- It is a unsecure method because it display the form data in the URL.small amount of data.
+       -> post :- It is secure method and send the data in a hidden way and we can send large amount of data.
+       -> action="path" where we send the form data 
+       -> enctype="multipart/form-data" (for file upload)
+    -> form inputs 
+       
+       Task 
+         Registration Form 
+      Fname     texbox 
+      Lname     textbox 
+      Email     textbox 
+      Password   passwordfield 
+      Gender     radio button 
+      Country    select 
+      About Us   textarea 
+      Attach      filefield 
+      Hobbies     checkbox 
+         Submit  Reset 
+
+-> Html 5 new form tags 
+  introduce some vaidation parts also 
+    -> attributes 
+      required 
+      pattern="regex" 
+        regex :- regular expression 
+          [ ]:- pattern 
+          { } :- range 
+          + :- compulsary 
+          | :- or
+      --> Task 
+
+      Fname textbox (only small and capital alphabtes allow)
+      age   textbox (only digit allow between 1 to 2)
+      email  textbox (@ . , abc@gmail.com )
+      Feedback textarea (minmum 50 character , maximun 250)
+      DOB  
+
+        all fields are required
+
+  -> New Semantic /Structural Html 5 Elements 
+     -> These elements to define different part of a web page 
+        -> <article> :- self-contained tag eg used for post,article, blog entry etc.
+        -> <aside> :- used to divide our sections 
+        -> <figure> : we store aur our gallery , images 
+        -< <figcaption> :- define a caption for a <figure> element.
+        -> <header> :- to define header portin there 
+        -> <footer> :- to define the footer portion 
+        -> <main> :- main parent element of the application 
+        -> <nav> :- we define the menus 
+        -> <section> :- It is a container portion same as <Div>
+        -> <details> :- description ,caption etc 
+        -> Media Elements 
+          <audio>
+          <video>
+          <embed>
+        -> Types of elements 
+        inline elements :-   span , label 
+        block level :- h1 , p, div ,
+        -> <div> tag :- used to divide our web page into sections as per the requirement.
+          -> It is manage by styles 
+          <div> hhhhhh </div>
+            eg: 
+              <div>
+                  <div> Header </div>
+                  <div> Nav  </div>
+                  <div>
+                        <div> Sidebar </div>
+                        <div> Content Area </div>
+                  </div>
+                  <div> Footer </div>
+              </div>
+              -> convert div into html 5 
+              <main>
+                 <header> Header </header>
+                 <nav> Nav </nav>
+                 <section>
+                    <aside> Sidebar </aside>
+                    <aside> Content Area
+                 </section>
+                 <footer> Footer </footer>
+              </main>
+
+      Task
+      Layout table 
+
+      --> Styles :- are used to apply some attractive feaures in our web page (look and feel of the application)
+         -> Types of styles 
+           -> Inline :- these styles are apply in any tag with the help of style attribute .
+             eg:
+             <p style="color:red"> Text </p>
+           -> Internal (Embedded) :- define in head section with the help of style tag 
+             eg:
+             <head>
+               <style>
+                 h1{color:red}
+                 p{color:green;font-family:monospace}
+               </style>
+             </head>
+           -> External (CSS):- are used for the whole, multiple-page websites.This is a seperate css file with an extension of .css and then we call that css file in any web page with the help of <link > tag.
+           eg:
+           style.css 
+             h2{color:red}
+            p{color:green; font-family: monospace;}
+            a{text-decoration:none; color:black}
+            a:hover{color:red;text-decoration: underline;}
+            home.html 
+            <html>
+               <head>
+                  <link rel="stylesheet" href="style.css"/>
+               </head>
+               <body> 
+                 <h2>---</h2>
+                 <p>----</p>
+               </body>
+            </html>
+--> Selectors , Properties and Values
+   Html :- tags 
+   css :- selectors 
+     -> selectors are the names given to the styles in internal or a external styles .
+       each selector there are properties inside curly brackets 
+       selector{property:value} (Semi-colons are used to seperate the properties )
+       selector{property:value;property:value,..}
+
+       eg:
+        body{
+          font-size:16px;
+          color:navy;
+        }
+      -> Length and Percentages :- 
+      px: (12px) :- is the unit for pixels 
+      pt : unit of point (media)
+      % :- unit for percentages 
+      em : It is 2 time the current font size 
+      -> Types of selectors 
+          -> elements :- 
+            h1{----}
+          -> class 
+          -> id 
+          -> * (universal)
+          *{} :- whole web page 
+          -> seudo selector 
+          -> Class selector :- It is define with dot(.) sign with class name and call in any tag with class attribute.
+          .header{ --- }
+          <p class="header">
+            ---
+          </p>
+          -> Id Selector :- It is define with hash(#) sign with id name and call in any tag with id attribute.
+          #header{ --- }
+          <p id="header">
+            ---
+          </p>
+          -> Universal Selector(*)
+          *{
+            text-align:center;
+            color:blue
+          }
+          -> 
+          -> preference
+            inline 
+            internal 
+            external
+          -> Grouping selector 
+
+           h1 , h2 , p{
+             text-align:center,
+             color:green 
+           }
+           p.classname 
+          -> comments 
+          /*    */ (css)
+          html :- <!--   -->
+  -> margin :- outside of border 
+      margin:top right bottom left;
+      margin-top:10px;
+      margin:10px 20px 0px 20px;
+
+      margin-top:10px 10px;
+  -> padding :- inside the border 
+      padding:top right bottom left;
+      padding-top:10px;
+      padding:10px 20px 0px 20px;
+
+      padding-top:10px 10px;
+
+-> 
+   Task 
+       parent div (main) (90% center)
+           child div  Header (header) :- Header Text (padding:20px,width:100px) border
+           child div  Menu (menu) :- Menu Text (padding:20px, width:30px) border
+ -> Css Animation 
+    :- used for animations and transitiosn.
+      @ketframes customname{
+        from {background-color:green}
+        to {background-color:blue}
+      }
+       animation:customname 5s infinite
+      -> Main Style Properties 
+         -> margin 
+         -> padding 
+         -> position 
+         -> display 
+         -> float 
+         -> clear 
+         -> text properties , color , backgrounds 
+         -> flex
+  -> Display :- 
+     block , inline-block , inline , none 
+      -> block (layouts) :- 
+  -> float :- It defined that an element should be taken out of the normal flow of the document and placed along the left or right side of the container.
+    float:left | right |none
+
+    Task 
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+

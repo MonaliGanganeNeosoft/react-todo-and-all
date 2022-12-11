@@ -1,0 +1,339 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "NeoFood",
+    "description": "This API is for NeoFood."
+  },
+  "host": "localhost:9988",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Food",
+      "description": "Endpoints"
+    },
+    {
+      "name": "User",
+      "description": "Endpoints"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {
+    "authorization": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "paths": {
+    "/food/complexSearch/": {
+      "get": {
+        "tags": [
+          "Food"
+        ],
+        "description": "get all foods",
+        "parameters": [
+          {
+            "name": "minCarbs",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "maxCarbs",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "minProtein",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "maxProtein",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "minCalories",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "maxCalories",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "minFat",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "maxFat",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "minAlcohol",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "maxAlcohol",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "minCaffeine",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "maxCaffeine",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "minCopper",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "maxCopper",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "minCalcium",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "maxCalcium",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "minCholine",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "maxCholine",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "success"
+          },
+          "404": {
+            "description": "not found."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "security": [
+          {
+            "authorization": []
+          }
+        ]
+      }
+    },
+    "/food/trending_food": {
+      "get": {
+        "tags": [
+          "Food"
+        ],
+        "description": "trending food API",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "success"
+          },
+          "404": {
+            "description": "not found."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "security": [
+          {
+            "authorization": []
+          }
+        ]
+      }
+    },
+    "/food/popular_foods/": {
+      "get": {
+        "tags": [
+          "Food"
+        ],
+        "description": "get popular food API",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "success"
+          },
+          "404": {
+            "description": "not found."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "security": [
+          {
+            "authorization": []
+          }
+        ]
+      }
+    },
+    "/food/get_all_foods/": {
+      "post": {
+        "tags": [
+          "Food"
+        ],
+        "description": "get all foods",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "body data",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "pageNumber": {
+                  "type": "number",
+                  "example": 2
+                },
+                "sortBy": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "success"
+          },
+          "404": {
+            "description": "not found."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "security": [
+          {
+            "authorization": []
+          }
+        ]
+      }
+    },
+    "/user/signup": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "description": "Signup",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "body data",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "example": "sushantkadam1000@gmail.com"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "lala"
+                },
+                "fname": {
+                  "type": "string",
+                  "example": "Sush"
+                },
+                "lname": {
+                  "type": "string",
+                  "example": "K"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "success"
+          },
+          "404": {
+            "description": "not found."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "security": [
+          {
+            "authorization": []
+          }
+        ]
+      }
+    },
+    "/user/login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "description": "Login",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "body data",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "example": "sushantkadam1000@gmail.com"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "lala"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "success"
+          },
+          "404": {
+            "description": "not found."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "security": [
+          {
+            "authorization": []
+          }
+        ]
+      }
+    }
+  }
+}

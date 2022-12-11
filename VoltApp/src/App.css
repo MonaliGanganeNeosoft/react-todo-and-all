@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  background-image: url("../src/Images/Comics.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+

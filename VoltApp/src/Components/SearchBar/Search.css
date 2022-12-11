@@ -1,0 +1,86 @@
+.card{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cardDetails{
+    background: #eaf1fb;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.cardDetails p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.allDetail hr{
+   background-color: black;
+}
+
+.dataKeys{
+    background: #eaf1fb;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.dataKeys h5{
+    height: 150px;
+    text-align: center;
+    padding-top: 3rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 10%;
+}
+
+.dataKeys div h6{
+    border-bottom: 1px solid black;
+    margin-top: 5%;
+    padding-bottom: 14%;
+}
+
+.highValue{
+    background: red;
+    color: white;
+    border-radius: 25px;
+}
+
+.showValue{
+    background: black;
+    color: white;
+    width: 33%;
+    margin-left: 33%;
+}
+.showValue button{
+    font-weight: 900;
+    font-size: 18px;
+}
+.compareBox{
+    border: 2px solid black;
+    margin-top: 4% 0;
+    padding: 3% 0;
+    background: #000000d1;
+    border-radius: 14px;
+}
+
+
+.cardDetails{
+    background: #eaf1fb;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.cardDetails p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.selectedCard{
+    background: green;
+    color: white;   
+}
+
+.selectedCard p{
+    font-size: 18px;
+    font-weight: 500;
+}

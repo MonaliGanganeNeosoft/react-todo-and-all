@@ -1,0 +1,134 @@
+
+.registration{  
+  width:40vw;
+  margin:50px auto;  
+  padding:20px;
+  background: rgba( 250, 250, 250, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.registration>*{
+  margin:15px 0px;
+}
+
+.iconlogin{
+  font-size: x-large;
+  right: 5px;
+  top: 6px;
+  position:absolute;
+  z-index: 3;
+}
+.loginCss{
+  width:33vw;
+  margin:130px auto;  
+  padding:20px;
+  background: rgba( 250, 250, 250, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.prodContainer{
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.loginCss>*{
+  margin:15px 0px;
+}
+
+.button_fun:hover{
+  cursor:pointer;
+  transform:scale(1.03);
+  filter:brightness(110%)
+}
+.profile_img{
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+
+/* button css  */
+.button {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+ }
+ 
+ .button span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid royalblue;
+ }
+ 
+ .button span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+ }
+ 
+ .button:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+ }
+ 
+ .button:hover {
+  color: white;
+ }
+ 
+ .button:active span::before {
+  background: #2751cd;
+ }
+
+ .qnaCss{
+  width:50vw;
+}
+.text-left{
+  align-items: end;
+}
+@media screen and (max-width: 1000px) {
+
+  .registration{
+    width:50vw;
+  }
+  .loginCss{
+    width:50vw;
+  }
+  .qnaCss{
+    width:70vw;
+  }
+  }
+  @media screen and (max-width: 500px) {
+    .registration{
+      width:80vw;
+    }
+    .loginCss{
+      width:80vw;
+    }
+    .qnaCss{
+      width:80vw;
+    }
+    }
